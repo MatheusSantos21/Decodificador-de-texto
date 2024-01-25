@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="criptografar">
+            <textarea 
+            name="texto" 
+            class="texto" 
+            id="texto" 
+            cols="30" 
+            rows="10" 
+            placeholder="Digite um texto">
+        </textarea>
+        
+        <div class="termos">
+            <p>Apenas letras minúsculas é sem acentos.</p>
+        </div>
+        <div class="Botões">
+            <button class="bt-criptografar" type="button" onclick="criptografar()">
+                Criptografar
+            </button>
+            <input 
+            type="button" 
+            class="bt-descriptografar" 
+            value="Descriptografar" 
+            onclick="descriptografar()"
+            />
+        </div>
+    </div>
+    <div class="Criptografar">
+        <img src="img/MAGO_resized.jpg" alt="" id="mago">
+        <div class="Mensagemcriptografada" id="Mensagemcriptografada">
+            <h2 id="titulo-mensagem">Nenhum texto encontrado</h2>
+            <p id="paragrafo">Escreva o texto que desejar criptografar</p>
+            <textarea 
+            name="resultado" 
+            id="resultado" 
+            cols="30" 
+            rows="10" 
+            class="resultado"
+            placeholder="Resultado"
+            readonly
+        ></textarea>
+        <input type="button" class="bt-copiar" value="Copiar" onclick="copiar()">
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

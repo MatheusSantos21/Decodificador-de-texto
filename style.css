@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #DCDCDC;
+}
+
+.texto {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color:  #DCDCDC;
+    color: #6f27a7;
+}
+
+.texto::placeholder {
+    color: #6f27a7;
+    background-color: #DCDCDC;
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.termos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.termos p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Botões {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.bt-criptografar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color:  #6f27a7;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 8px;
+}
+.bt-descriptografar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background-color:  #604733;
+    border: 1px solid #0a0a09;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.bt-criptografar:hover,
+.bt-descriptografar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.Criptografar {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 20%;
+    height: 90%;
+    left: 74.9%;
+    top: 5%;
+    background-color: #DCDCDC;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.00);
+    border-radius: 32px;
+    color: #DCDCDC;
+}
+
+.bt-copiar {
+    padding: 1%;
+    width: 25%;
+    background-color: #6f27a7;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 14px; 
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bt-copiar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+    background-color: #4c1a59;
+}
+
+.resultado {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid  #DCDCDC;
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    resize: none;
+    color: #6f27a7;
+}
+
+.Mensagemcriptografada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+}
+
+.Mensagemcriptografada h2 {
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    stop-color: #6f27a7;
+    color: #6f27a7;
+}
+
+.Mensagemcriptografada p {
+    width: 80%;
+    font-family: "Inter";
+    font-size: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #6f27a7;
+}
+
+.Criptografar img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: -1%;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 57.5em) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .criptografar {
+        width: 100%;
+    }
+
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .termos {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .temos p {
+        font-size: 16px;
+    }
+    .Botões {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .bt-criptografar, .bt-descriptografar {
+        width: 48%;
+        border-radius: 16px;
+    }
+    .bt-criptografar:hover, .bt-descriptografar:hover {
+        margin: 0,3%;
+        width: 47.5%;
+        padding: 1.8;
+    }
+    .Criptografar {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .Mensagemcriptografada {
+        width: 100%;
+        top: 5%;
+    }
+    .Criptografar img {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
